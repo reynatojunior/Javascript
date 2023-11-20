@@ -18,14 +18,13 @@ let tipoCombustivel = 'Gasolina';
 let gastoMedio;
 let kmPorLT;
 
-if (tipoCombustivel == 'Etanol'){
+if (tipoCombustivel == 'Etanol') {
     kmPorLT = 7;
     gastoMedio = (precoEtanol / kmPorLT) * distanciaViagem;
     console.log('O valor medio gasto nessa viagem usando Etanol e de R$' + gastoMedio.toFixed(2));
-}else if(
+} else if (
     tipoCombustivel == 'Gasolina'
-)
-{
+) {
     kmPorLT = 11;
     gastoMedio = (precoGasolina / kmPorLT) * distanciaViagem;
     console.log('O valor medio gasto nessa viagem usando Gasolina e de R$' + gastoMedio.toFixed(2));
