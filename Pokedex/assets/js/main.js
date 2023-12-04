@@ -1,15 +1,13 @@
-function convertPokemonTypesToLi(pokemon){
+function convertPokemonTypesToLi(pokemon) {
   return PokemonTypes.map((type) => {
     `
     
-    `
-  })
+    `;
+  });
 }
 
-
-
 function convertPokemonToLi(pokemon) {
-    return `
+  return `
     <li class="pokemon">
     <span class="number">${pokemon.order}</span>
     <span class="name">${pokemon.name}</span>
@@ -25,14 +23,12 @@ function convertPokemonToLi(pokemon) {
         alt="${pokemon.name}">
     </div>
   </li>
-  `
+  `;
 }
 
-const pokemonList = document.getElementById('pokemonList')
+const pokemonList = document.getElementById("pokemonList");
 
 pokeApi.getPokemons().then((pokemons = []) => {
-
-   const newHtml = pokemons.map(convertPokemonToLi).join('')
-   pokemonList.innerHTML = newHtml
-
-})
+  const newHtml = pokemons.map(convertPokemonToLi).join("");
+  pokemonList.innerHTML = newHtml;
+});
