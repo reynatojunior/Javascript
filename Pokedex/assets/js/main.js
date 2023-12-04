@@ -1,3 +1,12 @@
+function convertPokemonTypesToLi(pokemon){
+  return PokemonTypes.map((type) => {
+    `
+    
+    `
+  })
+}
+
+
 
 function convertPokemonToLi(pokemon) {
     return `
