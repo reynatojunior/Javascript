@@ -33,7 +33,7 @@ pokeApi.getPokemons = (offset = 0, limit = 10) => {
         .then((response) => response.json())
         .then((jsonBody) => jsonBody.results)
         .then((pokemons) => {
-            for (let i = 0; i < pokemonList.length; i++) {
+            for (let i = 0; i < pokemons.length; i++) {
                 const pokemon = pokemonList[i];
                 pokemonList.innerHTML += convertPokemonToHtml(pokemon)
                 
