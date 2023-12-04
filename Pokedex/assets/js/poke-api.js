@@ -7,7 +7,7 @@ pokeApi.getPokemons = (offset = 0, limit = 10) => {
     function convertPokemonToHtml(pokemon){
         return `
         <li class="pokemon">
-            <span class="number">#001</span>
+            <span class="number">${pokemon.number}</span>
             <span class="name">${pokemon.name}</span>
 
             <div class="detail">
